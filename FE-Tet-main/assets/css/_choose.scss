@@ -1,0 +1,40 @@
+// Why choose us
+
+.chooses {
+  background-color: #f6fafe;
+  .choose-content {
+    padding-top: 102px;
+    padding-bottom: 102px;
+    .choose-heading {
+      color: $--primary-color;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 200%;
+      letter-spacing: -0.015em;
+      margin-bottom: 15px;
+      @media (max-width: 1200px) {
+        text-align: center;
+      }
+    }
+    .choose-subheading {
+      color: $--secondary-color;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      line-height: 150%;
+      margin-bottom: 15px;
+    }
+    .reason {
+      display: flex;
+      align-items: flex-start;
+      margin-left: -24px;
+      @media (max-width: 567px) {
+        margin-left: 0;
+      }
+      &:last-child {
+        @media (max-width: 567px) {
+          margin-bottom: 36px;
+        }
+      }
+    }
+  }
+}

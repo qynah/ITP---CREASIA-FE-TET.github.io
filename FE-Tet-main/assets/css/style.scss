@@ -1,0 +1,12 @@
+$--primary-color: #2f65c2;
+$--secondary-color: #081843;
+$--third-color: #de4141;
+
+@import "./global";
+@import "./_header";
+@import "./_banner";
+@import "./about";
+@import "./_choose";
+@import "./_clients";
+@import "./recentcards";
+@import "./_footer";

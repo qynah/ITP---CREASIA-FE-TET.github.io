@@ -1,0 +1,54 @@
+.navbar-nav {
+  column-gap: 60px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+}
+
+.nav {
+  &-link {
+    color: $--secondary-color;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    line-height: calc(23 / 16);
+  }
+
+  &-item {
+    margin-top: 27px;
+    position: relative;
+  }
+  &-item::after {
+    display: block;
+    content: "";
+    height: 5px;
+    margin-top: 25px;
+    background-color: $--primary-color;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  &-item:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+.header-language {
+  margin-left: 42px;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  padding-left: 32px;
+  position: relative;
+}
+
+.vertical-line {
+  border-left: solid 1px #c3c3c3;
+  height: 30px;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+.language-link {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #081843;
+  text-decoration: none;
+}
